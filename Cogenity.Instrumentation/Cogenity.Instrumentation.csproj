@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Cogenity.Instrumentation</RootNamespace>
     <AssemblyName>Cogenity.Instrumentation</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Cogenity.IO">
+      <HintPath>..\packages\Cogenity.IO.1.0.0.0\lib\portable-net451+win81\Cogenity.IO.dll</HintPath>
+    </Reference>
     <Reference Include="EventSourceProxy">
       <HintPath>..\packages\EventSourceProxy.3.0.3\lib\EventSourceProxy.dll</HintPath>
     </Reference>
@@ -58,10 +62,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ObservableStreamWriter.cs" />
     <Compile Include="EventStreamWriter.cs" />
     <Compile Include="IEventStreamSource.cs" />
-    <Compile Include="ObservableStream.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
