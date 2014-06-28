@@ -31,8 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Cogenity.IO">
-      <HintPath>..\packages\Cogenity.IO.1.0.0.0\lib\portable-net451+win81\Cogenity.IO.dll</HintPath>
+    <Reference Include="Cogenity.IO, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Cogenity.IO.1.0.0.1\lib\portable-net45+win+wp80\Cogenity.IO.dll</HintPath>
     </Reference>
     <Reference Include="EventSourceProxy">
       <HintPath>..\packages\EventSourceProxy.3.0.3\lib\EventSourceProxy.dll</HintPath>
